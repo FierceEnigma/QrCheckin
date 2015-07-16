@@ -1,0 +1,192 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: rgb(244, 244, 244)
+}
+
+.add-qrcode-button {
+
+    font-size: 25px;
+    position: absolute;
+    top: -13px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.add-qrcode-button:hover {
+
+    color: #1F495E;
+    top: -14px;
+    right: -11px;
+    font-size: 27px;
+}
+
+.add-qrcode-button-background {
+
+    position: absolute;
+    top: -11px;
+    right: -9px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    box-shadow: -1px 1px 3px gray;
+
+}
+
+.alert {
+
+    box-shadow: 0 2px 1px lightgray;
+}
+
+.container {
+
+    margin-top: 75px;
+}
+
+
+.create-qrcode-form-buttons {
+
+    text-align: right;
+}
+
+
+.dashboard-alert {
+
+    margin-bottom: 5px;
+}
+
+hr {
+
+    margin-bottom: 35px;
+}
+
+.navbar {
+
+    background-color: white;
+    box-shadow: -1px 1px 10px lightgray;
+
+}
+
+.qrcode-container{
+
+    border: 1px dashed lightgray;
+    height: 100%;
+    position: relative;
+}
+
+.qrcode-container p{
+
+    opacity: .5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform:    translate(-50%,-50%);
+    -ms-transform:     translate(-50%,-50%);
+    -o-transform:      translate(-50%,-50%);
+    transform:         translate(-50%,-50%);
+}
+
+.qrcode-preview {
+
+    position: absolute;
+    height: 100%;
+    width: 215px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform:    translate(-50%,-50%);
+    -ms-transform:     translate(-50%,-50%);
+    -o-transform:      translate(-50%,-50%);
+    transform:         translate(-50%,-50%);
+    background-image: url('/images/iphone-md.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 1px gray;
+    border-radius: 20px;
+}
+
+.vcenter {
+
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.welcome-header h2 {
+
+    font-weight: 300;
+    padding-bottom: 5px;
+
+}
+
+
+.welcome-header {
+
+    margin-top: 20px;
+   margin-bottom: 50px;
+   background-color: white;
+   box-shadow: 0 2px 1px lightgray;
+    border-radius: 10px;
+}
+
+.white-breadcrumb {
+
+    padding: 15px 15px;
+    margin-bottom: 25px;
+    background-color: white;
+    box-shadow: 0 2px 1px lightgray;
+    border-radius: 10px;
+
+}
+
+.wrap {
+
+    position: relative;
+    height: 320px;
+    display: table;
+}
+
+table {
+
+    position: relative;
+    background-color: white;
+    margin-bottom: -10px;
+}
+
+table tbody tr td:first-child,
+table tbody tr td:nth-child(2),
+table tbody tr td:nth-child(3),
+table tbody tr td:last-child {
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+
+    text-align: center;
+}
+
+
+tr td:last-child button{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+
+@media (min-width: 768px) {
+
+    tr td:last-child {
+
+        width:1%;
+        white-space:nowrap;
+    }
+
+    tr td:last-child button{
+
+    }
+}
