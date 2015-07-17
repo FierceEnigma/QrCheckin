@@ -41,10 +41,7 @@
         --><div class="wrap col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center ">
 
                 <div class="qrcode-preview">
-
-
-
-
+                    <div class="content-preview"></div
                 </div>
             </div>
         </div>
@@ -89,6 +86,11 @@
                 $('.no-qrcode').show();
             })
 
+        });
+
+        $('#description').keyup(function(){
+
+           $('.content-preview').text($(this).val());
         });
 
     </script>
