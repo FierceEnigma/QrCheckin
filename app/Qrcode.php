@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Qrcode extends Model
 {
-    protected $fillable = ['name', 'description', 'type', 'content', 'user_id'];
+    protected $fillable = ['name', 'description', 'qrcode', 'user_id'];
 
     public function qrcode()
     {

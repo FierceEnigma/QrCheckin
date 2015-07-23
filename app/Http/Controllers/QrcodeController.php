@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
 use SimpleSoftwareIO\QrCode\Facades\QrCode as Qr;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class QrcodeController extends Controller
 {
@@ -73,14 +74,12 @@ class QrcodeController extends Controller
             'description' => 'required']);
 
         $fileName = Carbon::now() . '.jpg';
-        $description = $request->get('description');
+        $user = Auth::user();
+        $request->merge(['qrcode' => $fileName, 'user_id' => $user->id]);
 
-        $qrcode = new Qrcode($request->all());
-        $qrcode->qrcode = $fileName;
+        $qrcode = Qrcode::create($request->all());
 
-        Qr::format('jpg')->size(1000)->generate($description, './qrcodes/'.$fileName);
-
-        Auth::user()->qrcodes()->save($qrcode);
+        Qr::format('jpg')->size(1000)->generate(getenv('SITE_URL') . 'promotions/'.$qrcode->id, './qrcodes/'.$fileName);
 
         return redirect('/dashboard')->with('message', 'Qrcode successfully created');
     }
