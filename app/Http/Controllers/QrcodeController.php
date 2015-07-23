@@ -55,12 +55,6 @@ class QrcodeController extends Controller
         return response()->download('./qrcodes/'.$fileName);
     }
 
-    public function preview() {
-
-        $description = Input::get('description');
-
-        return(Qr::margin(0)->size(180)->generate($description));
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -71,7 +65,10 @@ class QrcodeController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'description' => 'required']);
+            'description' => 'required',
+            'qrcode-color' => 'required',
+            'qrcode-background-color' => 'required'
+        ]);
 
         $fileName = Carbon::now() . '.jpg';
         $user = Auth::user();

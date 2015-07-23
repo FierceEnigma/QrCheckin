@@ -16,7 +16,7 @@
 
             <div class="white-breadcrumb">
 
-                {!! Form::open(['class' => 'form', 'method' => 'post', 'action' => 'QrcodeController@store']) !!}
+                {!! Form::open(['class' => 'form horizontal-form', 'method' => 'post', 'action' => 'QrcodeController@store']) !!}
 
                 <div class="form-group">
                     {!! Form::label('name', 'Name') !!}
@@ -28,8 +28,35 @@
                     {!! Form::text('description', '', ['class' => 'form-control', 'id' => 'description']) !!}
                 </div>
 
+                <hr style="margin-bottom: 15px;">
+
+               <div class="container-fluid" style="padding: 0px;">
+
+                   <div class="form-group qrcode-color-change">
+                    <div class="qrcode-image text-center col-lg-5 col-md-5 col-sm-12 c0l-xs-12 nopadding">
+                        {!! SimpleSoftwareIO\QrCode\Facades\QrCode::margin(0)->size(150)->generate('example') !!}
+                    </div>
+                    <div class="col-md-7 col-md-7 col-sm-12 col-xs-12 nopadding">
+                        <label>Qrcode Color</label>
+                        <div class="bfh-colorpicker" id="qrcode-color" data-name="colorpicker3" data-close="false">
+                        </div>
+                        {!! Form::hidden('qrcode-color', '#000000', ['id' => 'qrcode-color-value']) !!}
+                        <label style="margin-top: 10px;">Qrcode Background Color</label>
+                        <div class="bfh-colorpicker" id="background-color" data-name="colorpicker3" data-close="false">
+                        </div>
+                        {!! Form::hidden('qrcode-background-color', '#000000', ['id' => 'qrcode-background-color-value']) !!}
+                    </div>
+
+                    </div>
+
+               </div>
+
+                <hr style="margin-bottom: 15px;">
+
                 <div class="form-group create-qrcode-form-buttons">
-                    {!! Form::submit('Add', ['class' => 'btn btn-success']) !!}
+                    <div class="">
+                        {!! Form::submit('Add', ['class' => 'btn btn-success']) !!}
+                    </div>
                 </div>
 
                 {!! Form::close() !!}
@@ -93,6 +120,28 @@
            $('.content-preview').text($(this).val());
         });
 
+        $(document).ready(function() {
+
+
+        });
+
+        $('#qrcode-color').on('change.bfhcolorpicker', function() {
+
+            var hex = $(this).val();
+            console.log(hex);
+            $('svg').children('defs').children('rect').attr('fill', hex);
+            $('#qrcode-color-value').val(hex);
+
+        })
+
+
+        $('#background-color').on('change.bfhcolorpicker', function() {
+
+            var hex = $(this).val();
+            console.log(hex);
+            $('svg').children('rect').attr('fill', hex);
+            $('#qrcode-background-color-value').val(hex);
+        })
     </script>
 
 @stop

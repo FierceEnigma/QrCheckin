@@ -47,13 +47,25 @@ body {
 
 .content-preview {
 
-    height: 180px;
-    width: 100px;
+    height: 220px;
+    width: 140px;
     position: absolute;
     left: 50%;
     top: 25%;
     transform: translate(-50%, 0);
-    font-size: smaller;
+}
+
+@media (max-width: 991px) {
+
+    .content-preview {
+
+        height: 250px;
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, 0);
+    }
 }
 .create-qrcode-form-buttons {
 
@@ -78,6 +90,10 @@ hr {
 
 }
 
+.nopadding {
+    padding: 0 !important;
+}
+
 .qrcode-container{
 
     border: 1px dashed lightgray;
@@ -96,6 +112,18 @@ hr {
     -ms-transform:     translate(-50%,-50%);
     -o-transform:      translate(-50%,-50%);
     transform:         translate(-50%,-50%);
+}
+
+.qrcode-image {
+
+}
+
+@media (min-width: 992px) {
+
+    .qrcode-image {
+
+        margin-left: -15px;
+    }
 }
 
 .qrcode-preview {
@@ -154,9 +182,20 @@ hr {
 .wrap {
 
     position: relative;
-    height: 300px;
+    height: 439px;
     display: table;
 }
+
+@media (max-width: 991px) {
+
+    .wrap {
+
+        position: relative;
+        height: 567px;
+        display: table;
+    }
+}
+
 
 table {
 
