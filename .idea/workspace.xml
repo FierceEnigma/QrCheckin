@@ -37,16 +37,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaconQrCodeGenerator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/simplesoftwareio/simple-qrcode/src/SimpleSoftwareIO/QrCode/BaconQrCodeGenerator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="130.45833" vertical-offset="3371" max-vertical-offset="3930">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImageInterface.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/simplesoftwareio/simple-qrcode/src/SimpleSoftwareIO/QrCode/ImageInterface.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,15 +47,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/qrcodes/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82063884" vertical-offset="1406" max-vertical-offset="2280">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state vertical-scroll-proportion="25.541666" vertical-offset="1303" max-vertical-offset="1950">
+              <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
               <folding>
                 <element signature="e#1096#1117#0#HTML" expanded="true" />
                 <element signature="e#1848#1873#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-formhelpers-colorpicker.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/BootstrapFormHelpers-master/js/bootstrap-formhelpers-colorpicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7563805" vertical-offset="4819" max-vertical-offset="5355">
+              <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7083333" vertical-offset="508" max-vertical-offset="930">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="92" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,16 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
               <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataTypeInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/simplesoftwareio/simple-qrcode/src/SimpleSoftwareIO/QrCode/DataTypes/DataTypeInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/app/Qrcode.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PromotionController.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
-        <option value="$PROJECT_DIR$/public/BootstrapFormHelpers-master/js/bootstrap-formhelpers-colorpicker.js" />
         <option value="$PROJECT_DIR$/public/css/tweaks.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QrcodeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/public/BootstrapFormHelpers-master/js/bootstrap-formhelpers-colorpicker.js" />
         <option value="$PROJECT_DIR$/resources/views/qrcodes/create.blade.php" />
       </list>
     </option>
@@ -552,7 +552,7 @@
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="qrco&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;create&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;twe&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;creat&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;qrcont&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;tweaks&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;qrc&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;rout&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;qrcode&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;qrcodeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/database/migrations/2015_06_30_174356_create_qrcodes_table.php&#10;cre&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;crea&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;twea&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;routes&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;qrcod&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;dash&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/dashboard.blade.php&#10;Bacon&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/vendor/simplesoftwareio/simple-qrcode/src/SimpleSoftwareIO/QrCode/BaconQrCodeGenerator.php&#10;SimpleSoftwareIO\QrCode&#9;null&#9;null&#10;BaconQrCode&#9;null&#9;null&#10;das&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/dashboard.blade.php&#10;route&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;tweak&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;fu&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/js/functionality.js&#10;funct&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/js/functionality.js&#10;register.b&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/auth/register.blade.php&#10;boot&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/bootstrap.css&#10;boo&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/bootstrap.css&#10;validator&#9;null&#9;null&#10;validate&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/app.blade.php&#10;qrco&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;create&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;twe&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;creat&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;qrcont&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;tweaks&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;qrc&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;rout&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;qrcode&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;qrcodeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/database/migrations/2015_06_30_174356_create_qrcodes_table.php&#10;cre&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;crea&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/create.blade.php&#10;twea&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;routes&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;qrcod&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/Controllers/QrcodeController.php&#10;dash&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/dashboard.blade.php&#10;Bacon&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/vendor/simplesoftwareio/simple-qrcode/src/SimpleSoftwareIO/QrCode/BaconQrCodeGenerator.php&#10;SimpleSoftwareIO\QrCode&#9;null&#9;null&#10;BaconQrCode&#9;null&#9;null&#10;das&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/qrcodes/dashboard.blade.php&#10;route&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/app/Http/routes.php&#10;tweak&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/tweaks.css&#10;fu&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/js/functionality.js&#10;funct&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/js/functionality.js&#10;register.b&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/resources/views/auth/register.blade.php&#10;boot&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/bootstrap.css&#10;boo&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/public/css/bootstrap.css&#10;validator&#9;null&#9;null&#10;validate&#9;FILE&#9;file:///Applications/MAMP/htdocs/qrcode_manager/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -928,14 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="915">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
@@ -955,16 +947,6 @@
             <marker date="1392858914000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1392858914000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1392858914000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/BootstrapFormHelpers-master/js/bootstrap-formhelpers-colorpicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3922" max-vertical-offset="5265">
-          <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1067,14 +1049,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7083333" vertical-offset="508" max-vertical-offset="930">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/qrcodes/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82063884" vertical-offset="1406" max-vertical-offset="2280">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state vertical-scroll-proportion="25.541666" vertical-offset="1303" max-vertical-offset="1950">
+          <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
           <folding>
             <element signature="e#1096#1117#0#HTML" expanded="true" />
             <element signature="e#1848#1873#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/BootstrapFormHelpers-master/js/bootstrap-formhelpers-colorpicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7563805" vertical-offset="4819" max-vertical-offset="5355">
+          <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -44,7 +44,7 @@
                         <label style="margin-top: 10px;">Qrcode Background Color</label>
                         <div class="bfh-colorpicker" id="background-color" data-name="colorpicker3" data-close="false">
                         </div>
-                        {!! Form::hidden('qrcode-background-color', '#000000', ['id' => 'qrcode-background-color-value']) !!}
+                        {!! Form::hidden('qrcode-background-color', '#ffffff', ['id' => 'qrcode-background-color-value']) !!}
                     </div>
 
                     </div>
@@ -120,28 +120,6 @@
            $('.content-preview').text($(this).val());
         });
 
-        $(document).ready(function() {
-
-
-        });
-
-        $('#qrcode-color').on('change.bfhcolorpicker', function() {
-
-            var hex = $(this).val();
-            console.log(hex);
-            $('svg').children('defs').children('rect').attr('fill', hex);
-            $('#qrcode-color-value').val(hex);
-
-        })
-
-
-        $('#background-color').on('change.bfhcolorpicker', function() {
-
-            var hex = $(this).val();
-            console.log(hex);
-            $('svg').children('rect').attr('fill', hex);
-            $('#qrcode-background-color-value').val(hex);
-        })
     </script>
 
 @stop

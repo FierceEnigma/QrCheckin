@@ -321,6 +321,26 @@
       }
     }
   };
+
+
+
+    $('#qrcode-color').on('change.bfhcolorpicker', function() {
+
+        var hex = $(this).val();
+        console.log(hex);
+        $('svg').children('defs').children('rect').attr('fill', hex);
+        $('#qrcode-color-value').val(hex);
+
+    });
+
+
+    $('#background-color').on('change.bfhcolorpicker', function() {
+
+        var hex = $(this).val();
+        console.log(hex);
+        $('svg').children('rect').attr('fill', hex);
+        $('#qrcode-background-color-value').val(hex);
+    });
   
   
   /* COLORPICKER DATA-API
@@ -334,8 +354,11 @@
 
       $colorpicker.bfhcolorpicker($colorpicker.data());
     });
+
+    $('#qrcode-color').val($('#qrcode-color-value').val()).change();
+    $('#background-color').val($('#qrcode-background-color-value').val()).change();
   });
-  
+
   
   /* APPLY TO STANDARD COLORPICKER ELEMENTS
    * =================================== */
