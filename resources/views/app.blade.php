@@ -12,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/tweaks.css">
     <link href="/BootstrapFormHelpers-master/dist/css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -24,11 +25,60 @@
 
     @include('navigation.navbar')
 
-<div class="container">
+    <div id="wrapper">
 
-    @yield('content')
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
 
-</div>
+            {{--<a href="#menu-toggle" class="btn" id="menu-toggle"><i class="fa fa-bars fa-lg fa-inverse"></i></a>--}}
+
+            <ul class="sidebar-nav">
+
+                <a href="#menu-toggle" class="" id="menu-toggle"><i class="fa fa-bars fa-lg"></i></a>
+
+                <p class="sidebar-header">MENU</p>
+
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        @yield('content')
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
 
 
 <script src="/js/bootstrap.js"></script>
@@ -48,6 +98,12 @@
     };
 
     delay();
+
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+       $("#wrapper").toggleClass("toggled");
+    });
 
 </script>
 
