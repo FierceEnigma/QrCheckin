@@ -143,6 +143,57 @@ hr {
     background-size: contain;
     background-position: center;
 }
+
+@media(min-width:768px) {
+
+    #nav-signup {
+
+        margin-left: -10px;
+        padding-right: 10px;
+    }
+}
+
+
+table {
+
+    position: relative;
+    background-color: white;
+    margin-bottom: -10px;
+}
+
+table tbody tr td:first-child,
+table tbody tr td:nth-child(2),
+table tbody tr td:nth-child(3),
+table tbody tr td:last-child {
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+
+    text-align: center;
+}
+
+
+tr td:last-child button{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media (min-width: 768px) {
+
+    tr td:last-child {
+
+        width:1%;
+        white-space:nowrap;
+    }
+
+    tr td:last-child button{
+
+    }
 }
 
 .vcenter {
@@ -196,45 +247,3 @@ hr {
     }
 }
 
-
-table {
-
-    position: relative;
-    background-color: white;
-    margin-bottom: -10px;
-}
-
-table tbody tr td:first-child,
-table tbody tr td:nth-child(2),
-table tbody tr td:nth-child(3),
-table tbody tr td:last-child {
-
-    text-align: center;
-    vertical-align: middle;
-}
-
-table th {
-
-    text-align: center;
-}
-
-
-tr td:last-child button{
-
-    margin-top: 5px;
-    margin-bottom: 5px;
- }
-
-
-@media (min-width: 768px) {
-
-    tr td:last-child {
-
-        width:1%;
-        white-space:nowrap;
-    }
-
-    tr td:last-child button{
-
-    }
-}

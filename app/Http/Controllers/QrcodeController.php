@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use SimpleSoftwareIO\QrCode\Facades\QrCode as Qr;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Library\QrcodeExtender;
 
 class QrcodeController extends Controller
 {
@@ -70,13 +71,16 @@ class QrcodeController extends Controller
             'qrcode-background-color' => 'required'
         ]);
 
-        $fileName = Carbon::now() . '.jpg';
+        $fileName = Carbon::now() . '.png';
         $user = Auth::user();
         $request->merge(['qrcode' => $fileName, 'user_id' => $user->id]);
 
+        $color = Qrcode::hex2rgb($request->get('qrcode-color'));
+        $bgcolor = Qrcode::hex2rgb($request->get('qrcode-background-color'));
+
         $qrcode = Qrcode::create($request->all());
 
-        Qr::format('jpg')->size(1000)->generate(getenv('SITE_URL') . 'promotions/'.$qrcode->id, './qrcodes/'.$fileName);
+        Qr::format('png')->size(1000)->color($color[0], $color[1], $color[2])->backgroundColor($bgcolor[0], $bgcolor[1], $bgcolor[2])->generate(getenv('SITE_URL') . 'promotions/'.$qrcode->id, './qrcodes/'.$fileName);
 
         return redirect('/dashboard')->with('message', 'Qrcode successfully created');
     }

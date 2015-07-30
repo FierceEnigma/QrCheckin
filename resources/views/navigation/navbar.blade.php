@@ -50,8 +50,8 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li>@include('auth.login-form')</li>
-                    <li style="margin-left: -10px; padding-right: 10px;">
-                        <form>
+                    <li id="nav-signup">
+                        <form class="form form-inline">
                             <a href="/register" class="btn btn-default btn-md btn-block navbar-btn">
                                 Sign Up
                             </a>
