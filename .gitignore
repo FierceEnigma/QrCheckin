@@ -1,8 +1,7 @@
 /vendor
 /node_modules
 Homestead.yaml
-/public/qrcodes/*
-!/public/qrcodes/hello.php
+/public/qrcodes/*.png
 !/public/qrcodes/
 .env
 .idea
