@@ -25,43 +25,10 @@
 
     @include('navigation.navbar')
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-
-            {{--<a href="#menu-toggle" class="btn" id="menu-toggle"><i class="fa fa-bars fa-lg fa-inverse"></i></a>--}}
-
-            <ul class="sidebar-nav">
-
-                <a href="#menu-toggle" class="" id="menu-toggle"><i class="fa fa-bars fa-lg"></i></a>
-
-                <p class="sidebar-header">MENU</p>
-
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+        @if(Auth::user())
+            <div id="wrapper">
+            @include('navigation.sidebar')
+        @endif
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -76,7 +43,9 @@
         </div>
         <!-- /#page-content-wrapper -->
 
+    @if(Auth::user())
     </div>
+    @endif
     <!-- /#wrapper -->
 
 
